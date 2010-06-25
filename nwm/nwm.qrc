@@ -1,0 +1,46 @@
+<RCC>
+    <qresource prefix="/">
+        <file>images/decouple.png</file>
+        <file>images/props.png</file>
+        <file>images/refresh.png</file>
+        <file>images/cross.png</file>
+        <file>images/build.png</file>
+        <file>images/cancel.png</file>
+        <file>images/cut.png</file>
+        <file>images/debug.png</file>
+        <file>images/error.png</file>
+        <file>images/save.png</file>
+        <file>images/success.png</file>
+        <file>images/warning.png</file>
+        <file>images/copy.png</file>
+        <file>images/paste.png</file>
+        <file>images/new.png</file>
+        <file>splash.png</file>
+        <file>images/open.png</file>
+        <file>images/pm/dag.png</file>
+        <file>images/pm/edit.png</file>
+        <file>images/pm/optimize.png</file>
+        <file>images/pm/simulate.png</file>
+        <file>images/pm/timings.png</file>
+        <file>images/pm/vector.png</file>
+        <file>images/pm/zoom.png</file>
+        <file>images/pm/model.png</file>
+        <file>images/props/add.png</file>
+        <file>images/props/edit.png</file>
+        <file>images/main/analyzer.png</file>
+        <file>images/main/computer.png</file>
+        <file>images/main/devices.png</file>
+        <file>images/main/functions.png</file>
+        <file>images/main/help.png</file>
+        <file>images/main/plugin.png</file>
+        <file>images/main/pref.png</file>
+        <file>images/main/sync.png</file>
+        <file>images/main/triggers.png</file>
+        <file>images/main/find.png</file>
+        <file>images/main/printer.png</file>
+        <file>images/main/redo.png</file>
+        <file>images/main/undo.png</file>
+        <file>star.png</file>
+        <file>images/pm/bullet_delete.png</file>
+    </qresource>
+</RCC>
