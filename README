@@ -19,26 +19,43 @@ Using git Properly with Nova:
 
  0) Install & setup git
     Gentoo:         emerge git
-	Fedora/CentOS:  yum install git-core
-	Debian/Ubunto:  apt-get install git-core
-	Other:          http://git-scm.com/download
+    Fedora/CentOS:  yum install git-core
+    Debian/Ubunto:  apt-get install git-core
+    Other:          http://git-scm.com/download
 	
-	git config --global user.name "Your Name"
+    git config --global user.name "Your Name"
     git config --global user.email "Your Email"
  1) Add your ssh rsa public key to the project keyring, generating one if you
     don't have it.
 	
-	ssh-keygen -t rsa -C "Your Email"
+    ssh-keygen -t rsa -C "Your Email"
  
  2) Create a github.com account at http://github.com
  3) Fork our repository at http://github.com/sme/Nova
  4) Clone our forked repository on your system get it up-to-date
  
     cd projects
-	git clone git@github.com:<username>/Nova.git
-	git remote add upstream git://github.com/sme/Nova.git
-	git fetch upstream
+    git clone git@github.com:<username>/Nova.git
+    git remote add upstream git://github.com/sme/Nova.git
+    git fetch upstream
 	
  5) Start coding!
  
-Key concepts to working with our github:
+Working with our github:
+
+ - When you are ready to add changes to the main project stream, you need to
+   push your current working branch to your github Nova fork.  Then, you
+   must initiate a pull request.
+ - If and when we approve your changes, your working branch will be merged
+   into our edge branch.  This is the current bleeding edge of the Nova
+   project.
+ - We will *try* to merge edge->nightly every night.  But there is no real
+   gaurentee that we will actually get around to doing this every day.
+   
+Notes:
+ - DO NOT BREAK THE EDGE BUILD!  If you do, people will be angry with you!
+   The point of the edge branch is to provide a working building block that
+   other developers are able to fetch/merge from if they want the most
+   recent view of the sourcecode.
+ - If you do break something, either rebase, or fetch from the latest nightly
+   build.
