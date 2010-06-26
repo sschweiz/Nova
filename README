@@ -1,15 +1,44 @@
 Nova - Real-time dynamic data processing engine
 Copyright (C) 2009-2010   Stephen Schweizer
 
-This program is free software: you can redistribute it and/or modify
-it under the terms of the GNU General Public License as published by
-the Free Software Foundation, either version 3 of the License, or
-(at your option) any later version.
+This program is free software: you can redistribute it and/or modify it under
+the terms of the GNU General Public License as published by the Free Software
+Foundation, either version 3 of the License, or (at your option) any later
+version.
 
-This program is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-GNU General Public License for more details.
+This program is distributed in the hope that it will be useful, but WITHOUT
+ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details. 
 
-You should have received a copy of the GNU General Public License
-along with this program.  If not, see <http://www.gnu.org/licenses/>.
+You should have received a copy of the GNU General Public License along with
+this program.  If not, see http://www.gnu.org/licenses/.
+
+-------------------------------------------------------------------------------
+
+Using git Properly with Nova:
+
+ 0) Install & setup git
+    Gentoo:         emerge git
+	Fedora/CentOS:  yum install git-core
+	Debian/Ubunto:  apt-get install git-core
+	Other:          http://git-scm.com/download
+	
+	git config --global user.name "Your Name"
+    git config --global user.email "Your Email"
+ 1) Add your ssh rsa public key to the project keyring, generating one if you
+    don't have it.
+	
+	ssh-keygen -t rsa -C "Your Email"
+ 
+ 2) Create a github.com account at http://github.com
+ 3) Fork our repository at http://github.com/sme/Nova
+ 4) Clone our forked repository on your system get it up-to-date
+ 
+    cd projects
+	git clone git@github.com:<username>/Nova.git
+	git remote add upstream git://github.com/sme/Nova.git
+	git fetch upstream
+	
+ 5) Start coding!
+ 
+Key concepts to working with our github:
